@@ -1,0 +1,6 @@
+{
+  "name": "Collateral Legal Counsel",
+  "description": "Collateral is an institutional law firm delivering strategic representation across Immigration, Business, Employment, Family, Criminal, Insurance, Education, and DUI Law.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
