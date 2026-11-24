@@ -37,7 +37,7 @@ export const FIRM_INFO = {
     'Olá, gostaria de solicitar informações sobre atendimento jurídico com o escritório Carreira Advocacia em Bauru/SP.',
   email: '[E-MAIL: contato@carreiraadvocacia.adv.br]',
   dpoEmail: '[E-MAIL DPO: privacidade@carreiraadvocacia.adv.br]',
-  businessHours: 'Segunda a sexta-feira, das 08h30 às 18h00 (com horário agendado)',
+  businessHours: 'Segunda a sexta-feira, das 08h00 às 18h00',
   heroBackdrop: getSiteAssetUrl('/src/assets/images/office_boardroom_clean_1795363800654.webp'),
   servicesBackdrop: getSiteAssetUrl('/src/assets/images/services_courthouse_bg_1795363216763.webp'),
   mapEmbedUrl:

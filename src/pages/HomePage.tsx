@@ -2,6 +2,7 @@ import { motion, useReducedMotion } from 'motion/react';
 import {
   ArrowRight,
   Clock,
+  Instagram,
   Mail,
   MapPin,
   MessageCircle,
@@ -108,6 +109,42 @@ export function HomePage({ onNavigate }: HomePageProps) {
             >
               <Mail className="w-4 h-4 text-[#7F99B2] shrink-0" aria-hidden="true" />
               <span>{FIRM_INFO.email}</span>
+            </a>
+          </div>
+          <div className="max-w-[1100px] mx-auto px-6 pb-2 flex flex-wrap items-center justify-center gap-3">
+            <div className="flex items-center gap-3 rounded-md border border-[#7F99B2]/30 bg-[#2C4156]/65 px-4 py-3">
+              <Clock className="w-5 h-5 text-[#AFC2D3] shrink-0" aria-hidden="true" />
+              <div>
+                <p className="text-[11px] uppercase tracking-[0.12em] text-[#AFC2D3]">
+                  Horário de atendimento
+                </p>
+                <p className="text-[13px] text-white">Segunda a sexta, das 08h às 18h</p>
+              </div>
+            </div>
+            <div className="flex items-center gap-3 rounded-md border border-[#7F99B2]/30 bg-[#2C4156]/65 px-4 py-3">
+              <Instagram className="w-5 h-5 text-[#AFC2D3] shrink-0" aria-hidden="true" />
+              <div>
+                <p className="text-[11px] uppercase tracking-[0.12em] text-[#AFC2D3]">
+                  Instagram
+                </p>
+                <p className="text-[13px] text-white">Perfil a informar</p>
+              </div>
+            </div>
+            <a
+              href={buildWhatsAppHref()}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => trackWhatsAppClick('home-contact-card')}
+              className="flex items-center gap-3 rounded-md border border-[#7F99B2]/45 bg-[#39586D] px-4 py-3 text-white transition-colors hover:bg-[#4A6B83]"
+              aria-label={`Falar pelo WhatsApp: ${FIRM_INFO.whatsappDisplay}`}
+            >
+              <MessageCircle className="w-5 h-5 text-[#D2D7DB] shrink-0" aria-hidden="true" />
+              <div>
+                <p className="text-[11px] uppercase tracking-[0.12em] text-[#D2D7DB]">
+                  WhatsApp
+                </p>
+                <p className="text-[13px]">{FIRM_INFO.whatsappDisplay}</p>
+              </div>
             </a>
           </div>
         </div>
